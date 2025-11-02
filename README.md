@@ -29,7 +29,7 @@ This project demonstrates:
 ## Live Demo
 
 Try the game online here:  
-[Play Simon Game on GitHub Pages]()
+[Play Simon Game on GitHub Pages](https://mustafahabibx.github.io/simon-game/)
 
 <br>
 
