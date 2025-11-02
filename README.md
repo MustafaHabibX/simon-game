@@ -3,7 +3,7 @@
 A **recreated classic Simon memory game** built with **HTML, CSS, JavaScript, and jQuery**, where players must **repeat increasingly long sequences** of colored buttons with **visual and audio feedback**.
 
 <p align="center">
-  <img src="./assets/" alt="Simon Game Banner" width="800"/>
+  <img src="./assets/banner.webp" alt="Simon Game Banner" width="800"/>
 </p>
 
 <br>
