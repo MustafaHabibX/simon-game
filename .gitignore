@@ -1,0 +1,29 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+Thumbs.db
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Logs
+*.log
+
+# Node modules (if any)
+node_modules/
+
+# Build/output directories
+dist/
+build/
+
+# Environment files
+.env
+
+# Swap files
+*.swp
