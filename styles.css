@@ -1,0 +1,98 @@
+/* Gradient overlay behind game */
+.gradient-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(-45deg, #ff416c, #ff4b2b, #1c92d2, #f2fcfe);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  z-index: -1; /* behind everything */
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Title */
+#level-title {
+  font-family: "Press Start 2P", cursive;
+  font-size: 3rem;
+  margin: 5%;
+  color: #fef2bf;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Game container */
+.container {
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+
+/* Buttons */
+.btn {
+  margin: 25px;
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Gradient inner glow for each button */
+.red {
+  background: linear-gradient(145deg, #ff4b2b, #ff1e00);
+}
+.green {
+  background: linear-gradient(145deg, #28e100, #00a800);
+}
+.blue {
+  background: linear-gradient(145deg, #00c3ff, #0066ff);
+}
+.yellow {
+  background: linear-gradient(145deg, #fff500, #ffd600);
+}
+
+/* Hover effect - slightly enlarge and glow */
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.7), 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Pressed effect - darken and glow */
+.pressed {
+  filter: brightness(1.2);
+  box-shadow: 0 0 40px #fff, 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+.btn,
+.pressed {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
